@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class PlayerDeath : MonoBehaviour {
 
 	// Use this for initialization
 	void Start (){
-        Death = true;
+        Death = false;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +23,9 @@ public class PlayerDeath : MonoBehaviour {
             }
 	}
 
+    //Upon "Death" the prototype file is loaded, effectively restarting the game.
     IEnumerator Die(){
-        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("prototype");
+        yield return null;
     }
 }

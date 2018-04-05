@@ -30,9 +30,13 @@ public class Player_Move : MonoBehaviour {
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(X * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
 
-    void Flip()
-    {
-
+    //Method to change the facing direction of player in relation to which way it is moving.
+    void Flip(){
+        facingRight = !facingRight;
+        //Scale of the player changed
+        Vector2 localScale = gameObject.transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 
     void Jump(){

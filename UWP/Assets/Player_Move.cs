@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Player_Move : MonoBehaviour {
 
-    public bool facingRight = true;
+    private bool facingRight = true;
     private int playerJumpPwr = 400;
-    public int playerSpeed = 12;
+    private int playerSpeed = 12;
     private float X;
-
-
 
     // Update is called once per frame.
     void Update() {

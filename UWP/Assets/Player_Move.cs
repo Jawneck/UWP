@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Player_Move : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public bool facingRight = true;
+    public int playerJumpPwr = 400;
+    public int playerSpeed = 12;
+
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Move();
 	}
+
+    void Move(){
+          
+    }
 }

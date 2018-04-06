@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraSystem : MonoBehaviour {
 
     //Variables used to clamp the camera into position, so it doesnt move off to the side.
-    private GameObject Player;
+    public GameObject Player;
     public float xMax;
     public float xMin;
     public float yMax;

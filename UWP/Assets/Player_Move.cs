@@ -19,11 +19,11 @@ public class Player_Move : MonoBehaviour {
         //Movement on the x axis.
         X = Input.GetAxis("Horizontal");
 
-        //Calling the jump method.
-        if(Input.GetButtonDown("Jump")){
+        //Calling the jump method. Stopping the player from jumping more than once.
+        if(Input.GetButtonDown("Jump") && touchingGround == true){
             Jump();
         }
-        
+        //Flipping the player when it is moving left or right.
         if(X < 0.0f && facingRight == false){
             Flip();
         }
@@ -45,12 +45,13 @@ public class Player_Move : MonoBehaviour {
 
     void Jump(){
         //Accessing the RigidBody2D and adding force in the direction up multiplied by jump power.
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPwr); 
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPwr);
+        touchingGround = false;
     }
 
+    //A method to check if the player is touching the ground.
     void OnCollisionEnter2D(Collision2D col){
-        if (col.gameObject.tag == "Ground")
-        {
+        if (col.gameObject.tag == "Ground"){
             touchingGround = true;
         }
     }

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Player_Move : MonoBehaviour {
 
-    private bool facingRight = true;
+    private bool facingRight = false;
     private int playerJumpPwr = 400;
     private int playerSpeed = 12;
     private float X;
+    private bool touchingGround;
 
     // Update is called once per frame.
     void Update() {
@@ -26,7 +27,7 @@ public class Player_Move : MonoBehaviour {
         if(X < 0.0f && facingRight == false){
             Flip();
         }
-        else if(X < 0.0f && facingRight == true){
+        else if(X > 0.0f && facingRight == true){
             Flip();
         }
 
@@ -47,4 +48,10 @@ public class Player_Move : MonoBehaviour {
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPwr); 
     }
 
+    void OnCollisionEnter2D(Collision2D col){
+        if (col.gameObject.tag == "Ground")
+        {
+            touchingGround = true;
+        }
+    }
 }

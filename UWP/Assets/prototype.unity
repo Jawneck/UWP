@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 6524771}
   m_Layer: 0
   m_Name: Grass (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,6 +990,7 @@ GameObject:
   - component: {fileID: 1188050682}
   - component: {fileID: 1188050681}
   - component: {fileID: 1188050686}
+  - component: {fileID: 1188050687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1122,6 +1123,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
+--- !u!114 &1188050687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188050680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9833f98a7d4228b4698820ff60b66179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 100
 --- !u!1 &1252861969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,7 +2045,7 @@ GameObject:
   - component: {fileID: 2019956018}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

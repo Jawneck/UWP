@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+    private int X = 1;
+    private int Speed = 2;
+
+	// Update is called once per frame. This method makes the enemy move.
 	void Update () {
-		
+		gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(X, 0) * Speed;
 	}
 }

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraSystem.cs" />
+     <Compile Include="Assets\Data.cs" />
      <Compile Include="Assets\EnemyMove.cs" />
      <Compile Include="Assets\PlatformMove.cs" />
      <Compile Include="Assets\Player_Move.cs" />

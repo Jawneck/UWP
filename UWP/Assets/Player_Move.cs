@@ -60,8 +60,9 @@ public class Player_Move : MonoBehaviour {
     void PlayerRay(){
         //Using a raycast to detect any object that is underneath the player.
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        //Bouncing the player off an enemy.
         if (hit.distance < 0.7f && hit.collider.tag == "Enemy"){
-            
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 100);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMove : MonoBehaviour {
 
@@ -16,6 +17,9 @@ public class EnemyMove : MonoBehaviour {
         //If the distance between the raycast and whatever it hits is less than 0.7, then flip.
         if(hit.distance < 0.7f){
             Flip();
+            if(hit.collider.tag == "Player"){
+                SceneManager.LoadScene("prototype");
+            }
         }
 	}
 

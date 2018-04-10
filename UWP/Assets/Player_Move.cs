@@ -63,6 +63,7 @@ public class Player_Move : MonoBehaviour {
         //Bouncing the player off an enemy.
         if (hit.distance < 0.7f && hit.collider.tag == "Enemy"){
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * 100);
+            Destroy(hit.collider.gameObject);
         }
     }
 }

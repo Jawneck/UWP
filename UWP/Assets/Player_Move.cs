@@ -13,6 +13,7 @@ public class Player_Move : MonoBehaviour {
     // Update is called once per frame.
     void Update() {
         Move();
+        PlayerRay();
     }
 
     void Move() {
@@ -53,6 +54,14 @@ public class Player_Move : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col){
         if (col.gameObject.tag == "Ground"){
             touchingGround = true;
+        }
+    }
+
+    void PlayerRay(){
+        //Using a raycast to detect any object that is underneath the player.
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        if (hit.distance < 0.7f && hit.collider.tag == "Enemy"){
+            
         }
     }
 }

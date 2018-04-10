@@ -29,9 +29,15 @@ public class Score : MonoBehaviour
     }
 
     //A method to check if the player enters the EndLevel object on trigger.
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        CountScore();
+    void OnTriggerEnter2D(Collider2D trigger){
+        //Only call CountScore method if player enters EndLevel object.
+        if(trigger.gameObject.name == "EndLevel"){
+            CountScore();
+        }
+        //Add to score each time player enters a Coin.
+        if(trigger.gameObject.name == "Coin"){
+            score += 100;
+        }
     }
 
     //A method which totals up the player score

@@ -63,6 +63,6 @@ public class Data : MonoBehaviour {
 [Serializable]
 class gameData{
 
-    public int highscore;
+    public static int highscore;
 
 }

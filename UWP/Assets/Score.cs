@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
     public int score = 0;
     public GameObject timeUI;
     public GameObject scoreUI;
+    public GameObject highScoreUI;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +22,7 @@ public class Score : MonoBehaviour
         //Displaying the time on the timeUI object ingame.
         timeUI.gameObject.GetComponent<Text>().text = ("Time Left: " + (int)time);
         scoreUI.gameObject.GetComponent<Text>().text = ("Score: " + score);
+        highScoreUI.gameObject.GetComponent<Text>().text = ("High Score: " + gameData.highscore);
 
         //If you run out of time the level restarts
         if (time < 0.1f){
@@ -43,6 +45,12 @@ public class Score : MonoBehaviour
 
     //A method which totals up the player score
     void CountScore(){
+        Debug.Log("Current:" + Data.data.HighScore);
+
         score = score + (int)(time * 10);
+        Data.data.HighScore = score + (int)(time * 10);
+        Data.data.SaveData();
+
+        Debug.Log("Newly saved data: " + Data.data.HighScore);
     }
 }

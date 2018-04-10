@@ -37,6 +37,7 @@ public class Score : MonoBehaviour
         //Add to score each time player enters a Coin.
         if(trigger.gameObject.name == "Coin"){
             score += 100;
+            Destroy(trigger.gameObject);//Destroys the coin onTrigger.
         }
     }
 

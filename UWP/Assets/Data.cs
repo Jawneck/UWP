@@ -35,15 +35,27 @@ public class Data : MonoBehaviour {
         gameData gameData = new gameData();
         gameData.highscore = HighScore;//Getting HighScore from Data and putting it into the highscore in gameData class.
 
-        //Serializes to a binary file.
+        //Serializes to a binary file. (Encrypts data)
         BinForm.Serialize(file, gameData);
 
         file.Close();
     }
 
     //A method which loads all the data.
-    public void LoadData(){
+    public void LoadData(){//If the game info game exists, load the data.
 
+        if(File.Exists(Application.persistentDataPath + "/gameInfo.dat")){
+            //Creating a binary formatter.
+            BinaryFormatter BinForm = new BinaryFormatter();
+            //Opening the game info file.
+            FileStream file = File.Open(Application.persistentDataPath + "/gameInfo.dat", FileMode.Open);
+            //Deserializes the binary file. (Decrypts data)
+            gameData gameData = (gameData)BinForm.Deserialize(file);
+
+            file.Close();
+            HighScore = gameData.highscore;
+           
+        }
     }
 
 }

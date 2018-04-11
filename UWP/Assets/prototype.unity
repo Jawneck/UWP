@@ -627,7 +627,6 @@ GameObject:
   - component: {fileID: 427505923}
   - component: {fileID: 427505922}
   - component: {fileID: 427505921}
-  - component: {fileID: 427505920}
   m_Layer: 0
   m_Name: NewBackground2048x1536 (3)
   m_TagString: Untagged
@@ -635,18 +634,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &427505920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 427505919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &427505921
 Rigidbody2D:
   serializedVersion: 4
@@ -718,7 +705,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427505919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5291467, y: 1.4910028, z: 0}
+  m_LocalPosition: {x: -0.5291467, y: 1.4910028, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -734,7 +721,6 @@ GameObject:
   - component: {fileID: 489453923}
   - component: {fileID: 489453922}
   - component: {fileID: 489453921}
-  - component: {fileID: 489453920}
   m_Layer: 0
   m_Name: NewBackground2048x1536 (1)
   m_TagString: Untagged
@@ -742,18 +728,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &489453920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489453919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &489453921
 Rigidbody2D:
   serializedVersion: 4
@@ -825,7 +799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489453919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.943, y: 1.49, z: 0}
+  m_LocalPosition: {x: 19.943, y: 1.49, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1628,7 +1602,6 @@ GameObject:
   - component: {fileID: 983232255}
   - component: {fileID: 983232254}
   - component: {fileID: 983232253}
-  - component: {fileID: 983232252}
   m_Layer: 0
   m_Name: NewBackground2048x1536
   m_TagString: Untagged
@@ -1636,18 +1609,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &983232252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983232251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &983232253
 Rigidbody2D:
   serializedVersion: 4
@@ -1719,7 +1680,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 983232251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.33, y: 1.49, z: 0}
+  m_LocalPosition: {x: 40.33, y: 1.49, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2602,7 +2563,6 @@ GameObject:
   - component: {fileID: 1614893257}
   - component: {fileID: 1614893256}
   - component: {fileID: 1614893255}
-  - component: {fileID: 1614893254}
   m_Layer: 0
   m_Name: NewBackground2048x1536 (2)
   m_TagString: Untagged
@@ -2610,18 +2570,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1614893254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1614893253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &1614893255
 Rigidbody2D:
   serializedVersion: 4
@@ -2693,7 +2641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614893253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.008, y: 1.491, z: 0}
+  m_LocalPosition: {x: -21.008, y: 1.491, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2907,7 +2855,6 @@ GameObject:
   - component: {fileID: 1751112181}
   - component: {fileID: 1751112180}
   - component: {fileID: 1751112179}
-  - component: {fileID: 1751112178}
   m_Layer: 0
   m_Name: NewBackground2048x1536 (4)
   m_TagString: Untagged
@@ -2915,18 +2862,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1751112178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751112177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &1751112179
 Rigidbody2D:
   serializedVersion: 4
@@ -2998,7 +2933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751112177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.809, y: 1.49, z: 0}
+  m_LocalPosition: {x: 60.809, y: 1.49, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3409,7 +3344,6 @@ GameObject:
   - component: {fileID: 2121362730}
   - component: {fileID: 2121362729}
   - component: {fileID: 2121362728}
-  - component: {fileID: 2121362727}
   m_Layer: 0
   m_Name: NewBackground2048x1536 (5)
   m_TagString: Untagged
@@ -3417,18 +3351,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2121362727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121362726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553c868cf0bd3384dab289298a751d1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollSpeed: -1.5
 --- !u!50 &2121362728
 Rigidbody2D:
   serializedVersion: 4
@@ -3500,7 +3422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121362726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.29, y: 1.49, z: 0}
+  m_LocalPosition: {x: 81.29, y: 1.49, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

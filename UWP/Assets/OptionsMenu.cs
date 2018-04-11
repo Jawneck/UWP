@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class OptionsMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioMixer audioMixer;
+
+	public void SetVolume (float volume){
+
+        //Sets the master volume via the volume slider.
+        audioMixer.SetFloat("Volume", volume);
+    }
 }

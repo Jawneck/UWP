@@ -34,6 +34,15 @@ public class Player_Move : MonoBehaviour {
         }
 
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(X * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+
+        //Animations
+        //If player is moving on the x-plane, then running is true. Otherwise false. 
+        if(X != 0){
+            GetComponent<Animator>().SetBool("IsRunning", true);
+        }
+        else{
+            GetComponent<Animator>().SetBool("IsRunning", false);
+        }
     }
 
     //Method to change the facing direction of player in relation to which way it is moving.

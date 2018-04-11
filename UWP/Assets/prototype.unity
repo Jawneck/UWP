@@ -1512,7 +1512,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1188050680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 0.89, z: 0}
+  m_LocalPosition: {x: -7.56, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2588,9 +2588,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2019517292}
   - component: {fileID: 2019517291}
-  - component: {fileID: 2019517290}
   - component: {fileID: 2019517289}
   - component: {fileID: 2019517288}
+  - component: {fileID: 2019517290}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Enemy
@@ -2629,8 +2629,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
---- !u!61 &2019517290
-BoxCollider2D:
+--- !u!58 &2019517290
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2642,18 +2642,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56}
-  m_EdgeRadius: 0
+  m_Radius: 1.28
 --- !u!212 &2019517291
 SpriteRenderer:
   m_ObjectHideFlags: 0

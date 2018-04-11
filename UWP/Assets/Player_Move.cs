@@ -7,7 +7,7 @@ public class Player_Move : MonoBehaviour {
     private bool facingRight = false;
     private int playerJumpPwr = 400;
     private int playerSpeed = 12;
-    private float X;
+    public static float playerX;
     private bool touchingGround;
     private float playerBottomRayDistance = 0.1f;
 
@@ -19,25 +19,25 @@ public class Player_Move : MonoBehaviour {
 
     void Move() {
         //Movement on the x axis.
-        X = Input.GetAxis("Horizontal");
+        playerX = Input.GetAxis("Horizontal");
 
         //Calling the jump method. Stopping the player from jumping more than once.
         if(Input.GetButtonDown("Jump") && touchingGround == true){
             Jump();
         }
         //Flipping the player when it is moving left or right.
-        if(X < 0.0f && facingRight == false){
+        if(playerX < 0.0f && facingRight == false){
             Flip();
         }
-        else if(X > 0.0f && facingRight == true){
+        else if(playerX > 0.0f && facingRight == true){
             Flip();
         }
 
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(X * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(playerX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
         //Animations
         //If player is moving on the x-plane, then running is true. Otherwise false. 
-        if(X != 0){
+        if(playerX != 0){
             GetComponent<Animator>().SetBool("IsRunning", true);
         }
         else{

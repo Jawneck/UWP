@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Background.cs" />
      <Compile Include="Assets\CameraSystem.cs" />
      <Compile Include="Assets\Data.cs" />
      <Compile Include="Assets\EnemyMove.cs" />

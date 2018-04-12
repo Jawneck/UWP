@@ -9,7 +9,7 @@ public class Player_Move : MonoBehaviour {
     private int playerSpeed = 12;
     public static float playerX;
     private bool touchingGround;
-    private float playerBottomRayDistance = 0.1f;
+    private float playerBottomRayDistance = 0.2f;
 
     // Update is called once per frame.
     void Update() {

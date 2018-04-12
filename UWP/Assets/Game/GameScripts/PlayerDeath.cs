@@ -16,6 +16,6 @@ public class PlayerDeath : MonoBehaviour {
 
     //Upon "Death" the prototype file is loaded, effectively restarting the game.
     void Die(){
-        SceneManager.LoadScene("prototype");
+        SceneManager.LoadScene(1);
     }
 }

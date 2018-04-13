@@ -18,7 +18,7 @@ public class EnemyMove : MonoBehaviour {
         if(hit.distance < 0.7f){
             Flip();
             if(hit.collider.tag == "Player"){
-                SceneManager.LoadScene("prototype");
+                SceneManager.LoadScene(1);
             }
         }
 	}
